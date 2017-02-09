@@ -1,0 +1,33 @@
+PODS:
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - iCarousel (1.8.3)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - NSDictionary-NilSafe (0.1.0)
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+
+DEPENDENCIES:
+  - FMDB
+  - iCarousel
+  - MagicalRecord
+  - NSDictionary-NilSafe
+  - SDCycleScrollView
+
+SPEC CHECKSUMS:
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  NSDictionary-NilSafe: ded11f8b09371306f99ac5da58be07a31041ac85
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+
+PODFILE CHECKSUM: ae029bfe103d99d09217928cf5c5134ef6b91e5d
+
+COCOAPODS: 1.1.1

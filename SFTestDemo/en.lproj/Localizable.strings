@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  SFTestDemo
+
+  Created by 黄云高 on 2017/2/4.
+  Copyright © 2017年 SugarFree. All rights reserved.
+*/
+
+
+"smart" = "smart";
+"strong" = "strong";
+"kind" = "kind";
+
+"某改" = "useless";

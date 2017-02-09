@@ -1,0 +1,33 @@
+
+/* Class = "UILabel"; text = "BM SHOW"; ObjectID = "4fH-9N-xKE"; */
+"4fH-9N-xKE.text" = "BM SHOW";
+
+/* Class = "UITabBarItem"; title = "kind"; ObjectID = "6FH-DL-Q7l"; */
+"6FH-DL-Q7l.title" = "kind";
+
+/* Class = "UITabBarItem"; title = "smart"; ObjectID = "a3r-ED-PKj"; */
+"a3r-ED-PKj.title" = "smart";
+
+/* Class = "UINavigationItem"; title = "Strong"; ObjectID = "bxT-zy-qbo"; */
+"bxT-zy-qbo.title" = "Strong";
+
+/* Class = "UITabBarItem"; title = "strong"; ObjectID = "chs-fH-Uut"; */
+"chs-fH-Uut.title" = "strong";
+
+/* Class = "UILabel"; text = "BasicCell"; ObjectID = "hTn-lF-X81"; */
+"hTn-lF-X81.text" = "BasicCell";
+
+/* Class = "UINavigationItem"; title = "Smart"; ObjectID = "oUI-LQ-BTd"; */
+"oUI-LQ-BTd.title" = "Smart";
+
+/* Class = "UINavigationItem"; title = "Kind"; ObjectID = "ocQ-1x-hIy"; */
+"ocQ-1x-hIy.title" = "Kind";
+
+/* Class = "UILabel"; text = "RightDetail"; ObjectID = "tI5-iN-hFN"; */
+"tI5-iN-hFN.text" = "RightDetail";
+
+/* Class = "UILabel"; text = "CNDota"; ObjectID = "vDU-pc-a3e"; */
+"vDU-pc-a3e.text" = "CNDota";
+
+/* Class = "UILabel"; text = "BestDota"; ObjectID = "vJ6-9E-yg0"; */
+"vJ6-9E-yg0.text" = "BestDota";

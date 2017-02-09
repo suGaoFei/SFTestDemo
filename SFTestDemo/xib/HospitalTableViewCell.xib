@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="hospitalCell" rowHeight="102" id="KGk-i7-Jjw" customClass="HospitalTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUG-Ca-ZIw">
+                        <rect key="frame" x="137" y="30" width="230" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="Wm9-7m-uND"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68k-Ml-MPn">
+                        <rect key="frame" x="137" y="56" width="230" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="TQV-sV-tfc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.23921568627450979" green="0.58039215686274503" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OWA-zB-5r0">
+                        <rect key="frame" x="10" y="15" width="112" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="Iqo-XG-HP3"/>
+                            <constraint firstAttribute="width" constant="112" id="Z3w-8Y-wWI"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OWA-zB-5r0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="1MF-ZB-UKM"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="68k-Ml-MPn" secondAttribute="trailing" id="1Tz-k8-a1K"/>
+                    <constraint firstItem="68k-Ml-MPn" firstAttribute="top" secondItem="PUG-Ca-ZIw" secondAttribute="bottom" constant="10" id="2rh-aR-ZzM"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PUG-Ca-ZIw" secondAttribute="trailing" id="Rzt-UQ-pUp"/>
+                    <constraint firstItem="OWA-zB-5r0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="TB9-Qs-kQO"/>
+                    <constraint firstItem="PUG-Ca-ZIw" firstAttribute="leading" secondItem="OWA-zB-5r0" secondAttribute="trailing" constant="15" id="Tby-Zh-XnI"/>
+                    <constraint firstItem="PUG-Ca-ZIw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="22" id="UKo-qs-q6i"/>
+                    <constraint firstItem="68k-Ml-MPn" firstAttribute="leading" secondItem="OWA-zB-5r0" secondAttribute="trailing" constant="15" id="XLv-Ts-bES"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="hospitalImageView" destination="OWA-zB-5r0" id="1w8-wh-9Za"/>
+                <outlet property="hospitalNameLabel" destination="PUG-Ca-ZIw" id="7Ls-io-eoN"/>
+                <outlet property="hospitalRankLabel" destination="68k-Ml-MPn" id="MDh-Wl-wrt"/>
+            </connections>
+            <point key="canvasLocation" x="53.5" y="83"/>
+        </tableViewCell>
+    </objects>
+</document>
