@@ -1,0 +1,1 @@
+../../../../MBaiduMap/MBaiduMap/BaiduMapAPI_Radar.framework/Headers/BMKRadarResult.h

@@ -1,0 +1,1 @@
+../../../../MBaiduMap/MBaiduMap/BaiduMapAPI_Search.framework/Headers/BMKShareUrlSearchOption.h

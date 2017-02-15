@@ -1,0 +1,1 @@
+../../../../MBaiduMap/MBaiduMap/BaiduMapAPI_Base.framework/Headers/BMKBaseComponent.h

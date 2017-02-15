@@ -6,6 +6,7 @@ pod 'FMDB'
 pod 'iCarousel'
 pod "NSDictionary-NilSafe"
 pod 'SDCycleScrollView'
+pod 'MBaiduMap'
 
 end
 

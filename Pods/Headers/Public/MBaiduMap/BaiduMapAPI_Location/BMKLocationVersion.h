@@ -1,0 +1,1 @@
+../../../../MBaiduMap/MBaiduMap/BaiduMapAPI_Location.framework/Headers/BMKLocationVersion.h

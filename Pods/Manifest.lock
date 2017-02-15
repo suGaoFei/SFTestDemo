@@ -6,6 +6,7 @@ PODS:
   - MagicalRecord (2.3.2):
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
+  - MBaiduMap (3.2.1)
   - NSDictionary-NilSafe (0.1.0)
   - SDCycleScrollView (1.65):
     - SDWebImage (~> 3.7)
@@ -17,6 +18,7 @@ DEPENDENCIES:
   - FMDB
   - iCarousel
   - MagicalRecord
+  - MBaiduMap
   - NSDictionary-NilSafe
   - SDCycleScrollView
 
@@ -24,10 +26,11 @@ SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  MBaiduMap: f277002506bb8a9d2608354846997b7b7cc8ed78
   NSDictionary-NilSafe: ded11f8b09371306f99ac5da58be07a31041ac85
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: ae029bfe103d99d09217928cf5c5134ef6b91e5d
+PODFILE CHECKSUM: e15e3c1d47cf4063c5407679fe3d7989c319cd86
 
 COCOAPODS: 1.1.1
