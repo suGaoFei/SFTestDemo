@@ -7,16 +7,18 @@
 //
 
 #import "OneIsSmart.h"
-
+#import "WMRollingView.h"
 @interface OneIsSmart ()<iCarouselDelegate, iCarouselDataSource, SDCycleScrollViewDelegate>
 
 @property (nonatomic, strong)SDCycleScrollView *niceView;
 @property (nonatomic, strong)iCarousel *icarousel;
+@property (nonatomic, strong)WMRollingView *rollingView;
 
 @property (nonatomic, strong)UIView *headerView;
 @property (nonatomic, strong)UIPageControl *pageControl;
 @property (nonatomic, strong)NSTimer *timer;
 @property (nonatomic, strong)NSArray *photoArray;
+@property (nonatomic, strong)NSMutableArray *dataArray;
 
 @property (nonatomic, strong)UIView *pigView;  //猪猪侠  悬停效果
 
@@ -30,6 +32,7 @@
     
     [self setUpHeadView];
     
+    [self setUpData];
     
 }
 - (void)viewWillAppear:(BOOL)animated{
@@ -53,13 +56,26 @@
     
     [self.headerView addSubview:self.niceView];
     
+    [self.headerView addSubview:self.rollingView];
+    
     self.tableView.tableHeaderView = self.headerView;
 
     [self.view addSubview:self.pigView];
 
     
 }
-
+- (void)setUpData{
+    _dataArray = [[NSMutableArray alloc]init];
+    NSArray *arr1 = @[@"推荐",@"最热",@"最新",@"关注",@"反馈"];
+    NSArray *arr2 = @[@"大降价了啊",@"iPhone7分期",@"这个苹果蛮脆的",@"来尝个香蕉吧",@"越来越香了啊你的秀发"];
+    for (int i=0; i<arr2.count; i++) {
+        WMRollingModel *model = [[WMRollingModel alloc]init];
+        model.type = arr1[i];
+        model.title = arr2[i];
+        [_dataArray addObject:model];
+    }
+    [_rollingView setRollingViewData:_dataArray];
+}
 
 //TODO:iCarousel Data Source
 
@@ -168,9 +184,24 @@
 #pragma mark Lazy Loading
 - (UIView *)headerView{
     if (!_headerView) {
-        _headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 2*ScreenWidth/1.6 + 10)];
+        _headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 2*ScreenWidth/1.6 + 10 + 100)];
     }
     return _headerView;
+}
+- (WMRollingView *)rollingView{
+    if (!_rollingView) {
+        _rollingView = [[WMRollingView alloc]initWithFrame:CGRectMake(0, 2*ScreenWidth/1.6 + 20, ScreenWidth, 50)];
+        _rollingView.image = [UIImage imageNamed:@"SV"];
+        __weak typeof(self)weakSelf = self;
+        _rollingView.clickBlock = ^(NSInteger index){
+            NSLog(@"点击了不该点击的东西");
+            UIAlertController *alterVC = [UIAlertController alertControllerWithTitle:@"通知" message:@"你点击不该点击的东西" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *alterAction = [UIAlertAction actionWithTitle:@"我错了" style:UIAlertActionStyleCancel handler:nil];
+            [alterVC addAction:alterAction];
+            [weakSelf presentViewController:alterVC animated:YES completion:nil];
+        };
+    }
+    return _rollingView;
 }
 - (SDCycleScrollView *)niceView{
     if (!_niceView) {

@@ -35,6 +35,8 @@
 		000A6ECB1E1F37D90073F493 /* TestFindTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000A6ECA1E1F37D90073F493 /* TestFindTableViewController.m */; };
 		000A6ED51E30987B0073F493 /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 000A6ED31E30987B0073F493 /* UIView+LayoutMethods.m */; };
 		000A6EE31E457BE60073F493 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 000A6EE51E457BE60073F493 /* InfoPlist.strings */; };
+		005E0C141E651471006CB373 /* WMRollingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 005E0C131E651471006CB373 /* WMRollingModel.m */; };
+		005E0C171E6514AD006CB373 /* WMRollingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 005E0C161E6514AD006CB373 /* WMRollingView.m */; };
 		006D1EAA1E457ED0005FC3BC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 006D1EAC1E457ED0005FC3BC /* Localizable.strings */; };
 		0080ADAF1E0B9E6800F3BE00 /* Public_ImagePublic_Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0080ADAE1E0B9E6800F3BE00 /* Public_ImagePublic_Image.xcassets */; };
 		0080ADB81E0BAD9B00F3BE00 /* BMShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0080ADB71E0BAD9B00F3BE00 /* BMShowViewController.m */; };
@@ -110,6 +112,10 @@
 		000A6ED31E30987B0073F493 /* UIView+LayoutMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutMethods.m"; sourceTree = "<group>"; };
 		000A6ED41E30987B0073F493 /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
 		000A6EE41E457BE60073F493 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		005E0C121E651471006CB373 /* WMRollingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMRollingModel.h; sourceTree = "<group>"; };
+		005E0C131E651471006CB373 /* WMRollingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMRollingModel.m; sourceTree = "<group>"; };
+		005E0C151E6514AD006CB373 /* WMRollingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMRollingView.h; sourceTree = "<group>"; };
+		005E0C161E6514AD006CB373 /* WMRollingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMRollingView.m; sourceTree = "<group>"; };
 		006D1EA51E457E30005FC3BC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		006D1EA61E457E30005FC3BC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		006D1EA71E457E30005FC3BC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -240,6 +246,7 @@
 		000A6E941E1502CA0073F493 /* 工具类 */ = {
 			isa = PBXGroup;
 			children = (
+				005E0C0E1E6419FF006CB373 /* UpAndDown */,
 				000A6ED21E30984B0073F493 /* UIView+LayoutMethods */,
 				000A6EBD1E1CD1690073F493 /* TitleAndCollectionView */,
 				000A6E9D1E15FBE60073F493 /* UIColor */,
@@ -308,6 +315,17 @@
 				000A6ED41E30987B0073F493 /* UIView+LayoutMethods.h */,
 			);
 			name = "UIView+LayoutMethods";
+			sourceTree = "<group>";
+		};
+		005E0C0E1E6419FF006CB373 /* UpAndDown */ = {
+			isa = PBXGroup;
+			children = (
+				005E0C121E651471006CB373 /* WMRollingModel.h */,
+				005E0C131E651471006CB373 /* WMRollingModel.m */,
+				005E0C151E6514AD006CB373 /* WMRollingView.h */,
+				005E0C161E6514AD006CB373 /* WMRollingView.m */,
+			);
+			name = UpAndDown;
 			sourceTree = "<group>";
 		};
 		0080ADB21E0BAD0F00F3BE00 /* Kind */ = {
@@ -538,6 +556,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005E0C171E6514AD006CB373 /* WMRollingView.m in Sources */,
 				000A6ECB1E1F37D90073F493 /* TestFindTableViewController.m in Sources */,
 				000A6EC01E1CD1FE0073F493 /* TestView.m in Sources */,
 				000A6EAC1E164FB80073F493 /* FindTableViewController.m in Sources */,
@@ -556,6 +575,7 @@
 				000358621E0B6F7600335D2B /* AppDelegate.m in Sources */,
 				000A6EC71E1F32F30073F493 /* ServiceCollectionViewCell.m in Sources */,
 				0003585F1E0B6F7600335D2B /* main.m in Sources */,
+				005E0C141E651471006CB373 /* WMRollingModel.m in Sources */,
 				000A6EA01E15FC500073F493 /* UIColor+RGB.m in Sources */,
 				0003589C1E0B75F700335D2B /* ThreeIsKind.m in Sources */,
 			);
