@@ -7,6 +7,7 @@ pod 'iCarousel'
 pod "NSDictionary-NilSafe"
 pod 'SDCycleScrollView'
 pod 'MBaiduMap'
+pod 'MMDrawerController', '~> 0.5.7'
 
 end
 

@@ -54,6 +54,21 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self.tableView deselectRowAtIndexPath:indexPath animated:nil];
     
+    if (indexPath.section == 0 && indexPath.row == 0) {
+        
+
+        NSString *data = @"https://www.baidu.com/你好，北京！";
+        
+        //转换成UTF-8
+        NSString *dataUTF8 = [data stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+        NSLog(@"%@",dataUTF8);
+        
+        //转换成中文
+        NSString *dataGBK = [dataUTF8 stringByRemovingPercentEncoding];
+        NSLog(@"%@",dataGBK);
+    }
+    
+    
     if (indexPath.section == 0 && indexPath.row == 2) {
         UIAlertController *alterController = [UIAlertController alertControllerWithTitle:@"警告" message:@"CNDota，BestDota！" preferredStyle:UIAlertControllerStyleAlert];
         

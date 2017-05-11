@@ -7,18 +7,31 @@ PODS:
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
   - MBaiduMap (3.2.1)
+  - MMDrawerController (0.5.7):
+    - MMDrawerController/Core (= 0.5.7)
+    - MMDrawerController/MMDrawerBarButtonItem (= 0.5.7)
+    - MMDrawerController/MMDrawerVisualStates (= 0.5.7)
+    - MMDrawerController/Subclass (= 0.5.7)
+  - MMDrawerController/Core (0.5.7)
+  - MMDrawerController/MMDrawerBarButtonItem (0.5.7):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.5.7):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.5.7):
+    - MMDrawerController/Core
   - NSDictionary-NilSafe (0.1.0)
-  - SDCycleScrollView (1.65):
-    - SDWebImage (~> 3.7)
-  - SDWebImage (3.8.2):
-    - SDWebImage/Core (= 3.8.2)
-  - SDWebImage/Core (3.8.2)
+  - SDCycleScrollView (1.66):
+    - SDWebImage (~> 4.0.0)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
 
 DEPENDENCIES:
   - FMDB
   - iCarousel
   - MagicalRecord
   - MBaiduMap
+  - MMDrawerController (~> 0.5.7)
   - NSDictionary-NilSafe
   - SDCycleScrollView
 
@@ -27,10 +40,11 @@ SPEC CHECKSUMS:
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   MBaiduMap: f277002506bb8a9d2608354846997b7b7cc8ed78
+  MMDrawerController: 7a4cf8e25596bf2434e03ce50d22a8608ddee6a1
   NSDictionary-NilSafe: ded11f8b09371306f99ac5da58be07a31041ac85
-  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
-  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SDCycleScrollView: e3ade90e9b3159bec04330b208fbfd81c3f3b671
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: e15e3c1d47cf4063c5407679fe3d7989c319cd86
+PODFILE CHECKSUM: 11a2b0abacd5d515ee70f03c285e62281b43c20e
 
 COCOAPODS: 1.1.1
