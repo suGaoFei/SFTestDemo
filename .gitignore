@@ -1,7 +1,8 @@
-*~
-.DS_Store 
-*.xcuserstate
-*.xcworkspace
-xcuserdata 
-*.lock
-Pods
+/Micropulse.xcworkspace/xcuserdata/ios1.xcuserdatad
+/Pods/Pods.xcodeproj/xcuserdata/ios1.xcuserdatad
+/Micropulse.xcodeproj/xcuserdata/ios1.xcuserdatad/xcschemes/xcschememanagement.plist
+/Micropulse.xcodeproj/xcuserdata/ios1.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+/Micropulse.xcworkspace/xcuserdata/jiaobai.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+/Micropulse.xcworkspace/xcuserdata/jiaobai.xcuserdatad/UserInterfaceState.xcuserstate
+/Micropulse.xcworkspace/xcuserdata/airende.xcuserdatad/UserInterfaceState.xcuserstate
+UserInterfaceState.xcuserstate
