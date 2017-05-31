@@ -8,6 +8,7 @@
 
 #import "ThreeIsKind.h"
 #import "BMShowViewController.h"
+#import "RTimeViewController.h"
 
 @interface ThreeIsKind ()
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;
@@ -90,6 +91,13 @@
         nextVc.hidesBottomBarWhenPushed = YES;
 
         [self.navigationController showViewController:nextVc sender:nil];
+    }
+    
+    if (indexPath.section == 1 && indexPath.row == 1) {
+        RTimeViewController *nextVC = [[RTimeViewController alloc]init];
+        nextVC.hidesBottomBarWhenPushed = YES;
+        
+        [self.navigationController showViewController:nextVC sender:nil];
     }
 }
 

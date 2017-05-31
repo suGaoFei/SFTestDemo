@@ -8,8 +8,11 @@
 
 #import "AppDelegate.h"
 
+#import "LeftViewController.h"
+
 @interface AppDelegate ()
 
+@property (nonatomic, strong) MMDrawerController *drawerController;
 @end
 
 @implementation AppDelegate
@@ -22,6 +25,30 @@
 //    [[UITabBar appearance] setBarTintColor:[UIColor greenColor]];
 //    //修改未选择的字体颜色。
 //    [[UITabBar appearance] setUnselectedItemTintColor:[UIColor yellowColor]];
+    
+    LeftViewController *leftView = [[LeftViewController alloc]init];
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *centerView = [storyBoard instantiateViewControllerWithIdentifier:@"mainView"];
+    
+    UINavigationController *centerNvaVC = [[UINavigationController alloc]initWithRootViewController:centerView];
+    UINavigationController *leftNvaVC = [[UINavigationController alloc]initWithRootViewController:leftView];
+    
+    self.drawerController = [[MMDrawerController alloc]initWithCenterViewController:centerNvaVC leftDrawerViewController:leftNvaVC];
+    
+    self.drawerController.showsShadow = NO;
+    
+    //4、设置打开/关闭抽屉的手势
+    self.drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
+    self.drawerController.closeDrawerGestureModeMask =MMCloseDrawerGestureModeAll;
+    //5、设置左右两边抽屉显示的多少
+    self.drawerController.maximumLeftDrawerWidth = 300.0;
+    
+    //6、初始化窗口、设置根控制器、显示窗口
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window setRootViewController:self.drawerController];
+    [self.window makeKeyAndVisible];
+    return YES;
+    
     
     return YES;
 }
