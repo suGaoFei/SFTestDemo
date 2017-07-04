@@ -33,11 +33,20 @@
     
     [self setBarItem];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //3Dtouch 进入
+    if ([ShareData shareInstrance].ThreeDTouchModel.is3DTouch) {
+        //修改单例
+        ThreeDTouchModel * threeDtouch = [[ThreeDTouchModel alloc]init];
+        threeDtouch.is3DTouch = NO;
+        threeDtouch.goWhere = @"nothing";
+        threeDtouch.goindex = 0;
+        threeDtouch.threeDCount = 0;
+        [ShareData shareInstrance].ThreeDTouchModel = threeDtouch;
+        
+        FindViewController *nextVC = [[FindViewController alloc]init];
+        nextVC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController showViewController:nextVC sender:nil];
+    }
 }
 - (void)setBarItem{
     NSString *title = NSLocalizedString(@"某改", nil);

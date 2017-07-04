@@ -10,6 +10,7 @@
 
 #import "LeftViewController.h"
 
+
 @interface AppDelegate ()
 
 @property (nonatomic, strong) MMDrawerController *drawerController;
@@ -17,26 +18,29 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0/255.0 green:175/255.0 blue:240/255.0 alpha:1]];
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor whiteColor], NSForegroundColorAttributeName, [UIFont systemFontOfSize:21], NSFontAttributeName, nil]];
+//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
     //修改tabbar背景色，放在appdelegate里面，不然有滞后性。
 //    [[UITabBar appearance] setBarTintColor:[UIColor greenColor]];
-//    //修改未选择的字体颜色。
+    //修改未选择的字体颜色。
 //    [[UITabBar appearance] setUnselectedItemTintColor:[UIColor yellowColor]];
     
+    /*
     LeftViewController *leftView = [[LeftViewController alloc]init];
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UIViewController *centerView = [storyBoard instantiateViewControllerWithIdentifier:@"mainView"];
-    
     UINavigationController *centerNvaVC = [[UINavigationController alloc]initWithRootViewController:centerView];
     UINavigationController *leftNvaVC = [[UINavigationController alloc]initWithRootViewController:leftView];
-    
     self.drawerController = [[MMDrawerController alloc]initWithCenterViewController:centerNvaVC leftDrawerViewController:leftNvaVC];
-    
     self.drawerController.showsShadow = NO;
-    
     //4、设置打开/关闭抽屉的手势
     self.drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
     self.drawerController.closeDrawerGestureModeMask =MMCloseDrawerGestureModeAll;
@@ -47,12 +51,60 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [self.window setRootViewController:self.drawerController];
     [self.window makeKeyAndVisible];
-    return YES;
+     */
     
+     [self setup3DTouch:application];
     
     return YES;
 }
 
+-(void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler
+{
+    if([shortcutItem.type isEqualToString:@"ONE"]){
+//        NSNotification *notice = [NSNotification notificationWithName:@"3DtouchOne" object:nil];
+//        [[NSNotificationCenter defaultCenter] postNotification:notice];
+        
+        ThreeDTouchModel * threeDtouch = [[ThreeDTouchModel alloc]init];
+        threeDtouch.is3DTouch = YES;
+        threeDtouch.goWhere = @"nothing";
+        threeDtouch.goindex = 0;
+        threeDtouch.threeDCount = 0;
+        [ShareData shareInstrance].ThreeDTouchModel = threeDtouch;
+//        ShareData shareInstrance
+        UITabBarController *tbcv = (UITabBarController *)self.window.rootViewController;
+        tbcv.selectedIndex = 2;
+        
+    }else if ([shortcutItem.type isEqualToString:@"TWO"]){
+        ThreeDTouchModel * threeDtouch = [[ThreeDTouchModel alloc]init];
+        threeDtouch.is3DTouch = YES;
+        threeDtouch.goWhere = @"nothing";
+        threeDtouch.goindex = 0;
+        threeDtouch.threeDCount = 0;
+        [ShareData shareInstrance].ThreeDTouchModel = threeDtouch;
+        //        ShareData shareInstrance
+        UITabBarController *tbcv = (UITabBarController *)self.window.rootViewController;
+        tbcv.selectedIndex = 1;
+  
+    }
+}
+- (void)setup3DTouch:(UIApplication *)application
+{
+    /**
+     type 该item 唯一标识符
+     localizedTitle ：标题
+     localizedSubtitle：副标题
+     icon：icon图标 可以使用系统类型 也可以使用自定义的图片
+     userInfo：用户信息字典 自定义参数，完成具体功能需求
+     */
+    //    UIApplicationShortcutIcon *icon1 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"标签.png"];
+    UIApplicationShortcutIcon *cameraIcon = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeCompose];
+    UIApplicationShortcutItem *cameraItem = [[UIApplicationShortcutItem alloc] initWithType:@"ONE" localizedTitle:@"FMDB" localizedSubtitle:@"" icon:cameraIcon userInfo:nil];
+    
+    UIApplicationShortcutIcon *shareIcon = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeShare];
+    UIApplicationShortcutItem *shareItem = [[UIApplicationShortcutItem alloc] initWithType:@"TWO" localizedTitle:@"毛玻璃" localizedSubtitle:@"" icon:shareIcon userInfo:nil];
+    /** 将items 添加到app图标 */
+    application.shortcutItems = @[cameraItem,shareItem];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

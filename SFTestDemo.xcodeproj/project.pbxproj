@@ -37,12 +37,15 @@
 		000A6EE31E457BE60073F493 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 000A6EE51E457BE60073F493 /* InfoPlist.strings */; };
 		005E0C141E651471006CB373 /* WMRollingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 005E0C131E651471006CB373 /* WMRollingModel.m */; };
 		005E0C171E6514AD006CB373 /* WMRollingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 005E0C161E6514AD006CB373 /* WMRollingView.m */; };
+		0062DEF41F0B6552003BABA4 /* RegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 0062DEF31F0B6552003BABA4 /* RegularExpression.m */; };
 		006D1EAA1E457ED0005FC3BC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 006D1EAC1E457ED0005FC3BC /* Localizable.strings */; };
 		0080ADAF1E0B9E6800F3BE00 /* Public_ImagePublic_Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0080ADAE1E0B9E6800F3BE00 /* Public_ImagePublic_Image.xcassets */; };
 		0080ADB81E0BAD9B00F3BE00 /* BMShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0080ADB71E0BAD9B00F3BE00 /* BMShowViewController.m */; };
 		008F46061EC98BDE00C1CD7C /* RTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008F46051EC98BDE00C1CD7C /* RTimeViewController.m */; };
 		008F460F1EC98D5F00C1CD7C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 008F460E1EC98D5F00C1CD7C /* Person.m */; };
 		00ABCE5C1EC3FF0F0019A36F /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ABCE5B1EC3FF0E0019A36F /* LeftViewController.m */; };
+		00CCDE861F0204AA003EE466 /* ShareData.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CCDE851F0204AA003EE466 /* ShareData.m */; };
+		00CCDE8D1F020893003EE466 /* TouchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CCDE8C1F020893003EE466 /* TouchModel.m */; };
 		ADE22B6D7507203960B0AD7A /* libPods-SFTestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECAC507DD06D72672CDB968 /* libPods-SFTestDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +122,8 @@
 		005E0C131E651471006CB373 /* WMRollingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMRollingModel.m; sourceTree = "<group>"; };
 		005E0C151E6514AD006CB373 /* WMRollingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMRollingView.h; sourceTree = "<group>"; };
 		005E0C161E6514AD006CB373 /* WMRollingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMRollingView.m; sourceTree = "<group>"; };
+		0062DEF21F0B6552003BABA4 /* RegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegularExpression.h; sourceTree = "<group>"; };
+		0062DEF31F0B6552003BABA4 /* RegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegularExpression.m; sourceTree = "<group>"; };
 		006D1EA51E457E30005FC3BC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		006D1EA61E457E30005FC3BC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		006D1EA71E457E30005FC3BC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -134,6 +139,10 @@
 		008F460E1EC98D5F00C1CD7C /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		00ABCE5A1EC3FF0E0019A36F /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		00ABCE5B1EC3FF0E0019A36F /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		00CCDE841F0204AA003EE466 /* ShareData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareData.h; sourceTree = "<group>"; };
+		00CCDE851F0204AA003EE466 /* ShareData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareData.m; sourceTree = "<group>"; };
+		00CCDE8B1F020893003EE466 /* TouchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchModel.h; sourceTree = "<group>"; };
+		00CCDE8C1F020893003EE466 /* TouchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchModel.m; sourceTree = "<group>"; };
 		12A24A443CE433D31D4EBA71 /* Pods-SFTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFTestDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SFTestDemo/Pods-SFTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9ECAC507DD06D72672CDB968 /* libPods-SFTestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SFTestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D602614DC3C33FFEC7454C /* Pods-SFTestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFTestDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SFTestDemo/Pods-SFTestDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -256,6 +265,9 @@
 		000A6E941E1502CA0073F493 /* 工具类 */ = {
 			isa = PBXGroup;
 			children = (
+				0062DEF11F0B6522003BABA4 /* 正则 */,
+				00CCDE871F020519003EE466 /* model */,
+				00CCDE831F020476003EE466 /* 单例 */,
 				005E0C0E1E6419FF006CB373 /* UpAndDown */,
 				000A6ED21E30984B0073F493 /* UIView+LayoutMethods */,
 				000A6EBD1E1CD1690073F493 /* TitleAndCollectionView */,
@@ -338,6 +350,15 @@
 			name = UpAndDown;
 			sourceTree = "<group>";
 		};
+		0062DEF11F0B6522003BABA4 /* 正则 */ = {
+			isa = PBXGroup;
+			children = (
+				0062DEF21F0B6552003BABA4 /* RegularExpression.h */,
+				0062DEF31F0B6552003BABA4 /* RegularExpression.m */,
+			);
+			name = "正则";
+			sourceTree = "<group>";
+		};
 		0080ADB21E0BAD0F00F3BE00 /* Kind */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,6 +396,24 @@
 			);
 			name = Smart;
 			path = Strong;
+			sourceTree = "<group>";
+		};
+		00CCDE831F020476003EE466 /* 单例 */ = {
+			isa = PBXGroup;
+			children = (
+				00CCDE841F0204AA003EE466 /* ShareData.h */,
+				00CCDE851F0204AA003EE466 /* ShareData.m */,
+			);
+			name = "单例";
+			sourceTree = "<group>";
+		};
+		00CCDE871F020519003EE466 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				00CCDE8B1F020893003EE466 /* TouchModel.h */,
+				00CCDE8C1F020893003EE466 /* TouchModel.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 		1C180BA04B3BCA77B9A0133F /* Frameworks */ = {
@@ -593,6 +632,7 @@
 				000A6EC01E1CD1FE0073F493 /* TestView.m in Sources */,
 				000A6EAC1E164FB80073F493 /* FindTableViewController.m in Sources */,
 				000A6EA41E1636EB0073F493 /* TitleTableViewCell.m in Sources */,
+				00CCDE861F0204AA003EE466 /* ShareData.m in Sources */,
 				0080ADB81E0BAD9B00F3BE00 /* BMShowViewController.m in Sources */,
 				000A6EC31E1CDA910073F493 /* TestTableViewController.m in Sources */,
 				000358651E0B6F7600335D2B /* ViewController.m in Sources */,
@@ -603,6 +643,7 @@
 				008F460F1EC98D5F00C1CD7C /* Person.m in Sources */,
 				000A6EB61E1C96D90073F493 /* HealthCollectionViewCell.m in Sources */,
 				000A6ED51E30987B0073F493 /* UIView+LayoutMethods.m in Sources */,
+				0062DEF41F0B6552003BABA4 /* RegularExpression.m in Sources */,
 				000358991E0B75C300335D2B /* TwoIsStrong.m in Sources */,
 				0003586B1E0B6F7600335D2B /* SFTestDemo.xcdatamodeld in Sources */,
 				008F46061EC98BDE00C1CD7C /* RTimeViewController.m in Sources */,
@@ -613,6 +654,7 @@
 				005E0C141E651471006CB373 /* WMRollingModel.m in Sources */,
 				000A6EA01E15FC500073F493 /* UIColor+RGB.m in Sources */,
 				0003589C1E0B75F700335D2B /* ThreeIsKind.m in Sources */,
+				00CCDE8D1F020893003EE466 /* TouchModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

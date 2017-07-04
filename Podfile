@@ -8,6 +8,9 @@ pod "NSDictionary-NilSafe"
 pod 'SDCycleScrollView'
 pod 'MBaiduMap'
 pod 'MMDrawerController', '~> 0.5.7'
+pod 'LTNavigationBar'
+pod 'JSONModel', '~> 1.7.0'
+
 
 end
 

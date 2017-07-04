@@ -19,22 +19,62 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //fuck you man, for testing.
     
+    //tableviewcell分割线到头
     self.tableView.separatorInset = UIEdgeInsetsZero;
-
-//    self.headImageView.contentMode = UIViewContentModeScaleAspectFill;
-//    self.headImageView.clipsToBounds = YES;
-//    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.navigationItem.title = @"";
+    
+    //毛玻璃效果
+//    UIVisualEffectView *visualEffect = [[UIVisualEffectView alloc]initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight]];
+//    visualEffect.frame = CGRectMake(0, 0, SCREEN_WIDTH, 40);
+//    visualEffect.alpha = 0.5;
+//    [self.view addSubview:visualEffect];
+    
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(jumpFMDB) name:@"3DtouchOne" object:nil];
+    
+    if ([ShareData shareInstrance].ThreeDTouchModel.is3DTouch) {
+        //修改单例
+        ThreeDTouchModel * threeDtouch = [[ThreeDTouchModel alloc]init];
+        threeDtouch.is3DTouch = NO;
+        threeDtouch.goWhere = @"nothing";
+        threeDtouch.goindex = 0;
+        threeDtouch.threeDCount = 0;
+        [ShareData shareInstrance].ThreeDTouchModel = threeDtouch;
+        
+        BMShowViewController *nextVc = [[BMShowViewController alloc]init];
+        nextVc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController showViewController:nextVc sender:nil];
+    }
     
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-
+- (void)jumpFMDB{
+    BMShowViewController *nextVc = [[BMShowViewController alloc]init];
+    nextVc.hidesBottomBarWhenPushed = YES;
+    
+    [self.navigationController showViewController:nextVc sender:nil];
+}
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    
+    return UIStatusBarStyleLightContent;
+//    return UIStatusBarStyleDefault;
+    
+}
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    [self.navigationController.navigationBar lt_setBackgroundColor:[UIColor clearColor]];
+}
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:YES];
+    
+    
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [self.navigationController.navigationBar lt_reset];
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -101,62 +141,7 @@
     }
 }
 
-#pragma mark Scroll Delegate
-//- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-//    _headImageView.height = MAX(-scrollView.contentOffset.y, 0);
-//}
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
-*/
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

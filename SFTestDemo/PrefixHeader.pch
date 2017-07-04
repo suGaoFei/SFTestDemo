@@ -17,9 +17,12 @@
 #import <SDCycleScrollView/SDCycleScrollView.h>
 #import "MMDrawerController.h"
 #import "UIViewController+MMDrawerController.h"
+#import "UINavigationBar+Awesome.h"
+
 
 #import "UIColor+RGB.h"
 #import "UIView+LayoutMethods.h"
+#import "ShareData.h"
 
 
 // Include any system framework and library headers here that should be included in all compilation units.

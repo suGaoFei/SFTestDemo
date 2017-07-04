@@ -51,13 +51,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SFTestDemo/Strong/TestTableViewController.m"
-            timestampString = "505391482.665112"
+            filePath = "SFTestDemo/&#x4e09;&#x5251;&#x5ba2;/ThreeIsKind.m"
+            timestampString = "520840998.229693"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "-jumpFMDB"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
