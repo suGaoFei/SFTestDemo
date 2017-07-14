@@ -46,6 +46,7 @@
 		00ABCE5C1EC3FF0F0019A36F /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ABCE5B1EC3FF0E0019A36F /* LeftViewController.m */; };
 		00CCDE861F0204AA003EE466 /* ShareData.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CCDE851F0204AA003EE466 /* ShareData.m */; };
 		00CCDE8D1F020893003EE466 /* TouchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CCDE8C1F020893003EE466 /* TouchModel.m */; };
+		00FF49FA1F15B5B10080287C /* FourIsCute.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FF49F91F15B5B10080287C /* FourIsCute.m */; };
 		ADE22B6D7507203960B0AD7A /* libPods-SFTestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECAC507DD06D72672CDB968 /* libPods-SFTestDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -143,6 +144,8 @@
 		00CCDE851F0204AA003EE466 /* ShareData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareData.m; sourceTree = "<group>"; };
 		00CCDE8B1F020893003EE466 /* TouchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchModel.h; sourceTree = "<group>"; };
 		00CCDE8C1F020893003EE466 /* TouchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchModel.m; sourceTree = "<group>"; };
+		00FF49F81F15B5B10080287C /* FourIsCute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourIsCute.h; sourceTree = "<group>"; };
+		00FF49F91F15B5B10080287C /* FourIsCute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourIsCute.m; sourceTree = "<group>"; };
 		12A24A443CE433D31D4EBA71 /* Pods-SFTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFTestDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SFTestDemo/Pods-SFTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9ECAC507DD06D72672CDB968 /* libPods-SFTestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SFTestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D602614DC3C33FFEC7454C /* Pods-SFTestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFTestDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SFTestDemo/Pods-SFTestDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -258,6 +261,8 @@
 				000358981E0B75C300335D2B /* TwoIsStrong.m */,
 				0003589A1E0B75F700335D2B /* ThreeIsKind.h */,
 				0003589B1E0B75F700335D2B /* ThreeIsKind.m */,
+				00FF49F81F15B5B10080287C /* FourIsCute.h */,
+				00FF49F91F15B5B10080287C /* FourIsCute.m */,
 			);
 			path = "三剑客";
 			sourceTree = "<group>";
@@ -652,6 +657,7 @@
 				000A6EC71E1F32F30073F493 /* ServiceCollectionViewCell.m in Sources */,
 				0003585F1E0B6F7600335D2B /* main.m in Sources */,
 				005E0C141E651471006CB373 /* WMRollingModel.m in Sources */,
+				00FF49FA1F15B5B10080287C /* FourIsCute.m in Sources */,
 				000A6EA01E15FC500073F493 /* UIColor+RGB.m in Sources */,
 				0003589C1E0B75F700335D2B /* ThreeIsKind.m in Sources */,
 				00CCDE8D1F020893003EE466 /* TouchModel.m in Sources */,

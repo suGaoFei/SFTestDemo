@@ -358,11 +358,11 @@
             </objects>
             <point key="canvasLocation" x="2204" y="-696.7016491754124"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Cute-->
         <scene sceneID="zM9-FI-Itz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="37z-xv-nHy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="downloads" id="tDW-g5-xmW"/>
+                    <tabBarItem key="tabBarItem" title="Cute" image="tabbar_find" selectedImage="tabbar_findHighed" id="tDW-g5-xmW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="biZ-KG-0lK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -380,6 +380,8 @@
     </scenes>
     <resources>
         <image name="BM" width="2560" height="1600"/>
+        <image name="tabbar_find" width="30" height="30"/>
+        <image name="tabbar_findHighed" width="30" height="30"/>
         <image name="tabbar_me" width="30" height="30"/>
         <image name="tabbar_meHighed" width="30" height="30"/>
         <image name="tabbar_seedoct" width="30" height="30"/>

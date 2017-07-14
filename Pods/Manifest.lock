@@ -2,6 +2,7 @@ PODS:
   - FMDB (2.7.2):
     - FMDB/standard (= 2.7.2)
   - FMDB/standard (2.7.2)
+  - GrowingIO (0.9.47)
   - iCarousel (1.8.3)
   - JSONModel (1.7.0)
   - LTNavigationBar (2.1.9)
@@ -30,6 +31,7 @@ PODS:
 
 DEPENDENCIES:
   - FMDB
+  - GrowingIO
   - iCarousel
   - JSONModel (~> 1.7.0)
   - LTNavigationBar
@@ -41,6 +43,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
+  GrowingIO: f529ec2787cc93da291f52d18517619d67a0bcd1
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   LTNavigationBar: c278785bed344862e18146b5f06792932e4feacc
@@ -51,6 +54,6 @@ SPEC CHECKSUMS:
   SDCycleScrollView: e3ade90e9b3159bec04330b208fbfd81c3f3b671
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 011ef3497d5dcfb6d5550b01be35cfad3f8d4e0a
+PODFILE CHECKSUM: 2224a92610a3ad1e3c7b38d3cebe001a616d0296
 
 COCOAPODS: 1.1.1

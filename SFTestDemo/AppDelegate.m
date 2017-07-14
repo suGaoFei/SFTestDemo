@@ -53,7 +53,14 @@
     [self.window makeKeyAndVisible];
      */
     
-     [self setup3DTouch:application];
+    [self setup3DTouch:application];
+    
+    
+    //启动页延迟5秒
+    [NSThread sleepForTimeInterval:3];
+    
+    //growing Io
+    [Growing startWithAccountId:@"93a627eba29fe74e"];
     
     return YES;
 }
@@ -86,6 +93,16 @@
         tbcv.selectedIndex = 1;
   
     }
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    if ([Growing handleUrl:url]) // 请务必确保该函数被调用
+    {
+        return YES;
+    }
+    return NO;
+    
 }
 - (void)setup3DTouch:(UIApplication *)application
 {

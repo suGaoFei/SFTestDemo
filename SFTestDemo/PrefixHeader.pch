@@ -19,6 +19,7 @@
 #import "UIViewController+MMDrawerController.h"
 #import "UINavigationBar+Awesome.h"
 
+#import <GrowingIO/Growing.h>
 
 #import "UIColor+RGB.h"
 #import "UIView+LayoutMethods.h"

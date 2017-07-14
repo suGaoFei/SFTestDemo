@@ -63,6 +63,13 @@
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:YES];
+    //GrowingIO测试
+    [Growing setCS1Value:@"100324" forKey:@"user_id"];
+    [Growing setCS2Value:@"943123" forKey:@"company_id"];
+    [Growing setCS3Value:@"王同学" forKey:@"user_name"];
+    [Growing setCS4Value:@"GrowingIO" forKey:@"company_name"];
+    [Growing setCS5Value:@"销售员小王" forKey:@"sales_name"];
+    
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     [self.navigationController.navigationBar lt_setBackgroundColor:[UIColor clearColor]];
