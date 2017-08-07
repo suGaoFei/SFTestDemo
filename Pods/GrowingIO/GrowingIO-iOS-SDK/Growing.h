@@ -18,6 +18,7 @@
 @import Security;
 @import CFNetwork;
 @import CoreLocation;
+@import Security;
 #endif
 
 typedef NS_ENUM(NSInteger, GrowingAspectMode)

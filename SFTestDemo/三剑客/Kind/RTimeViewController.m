@@ -21,6 +21,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self setUpUi];
+    
+    
+    //runTime
     self.title = @"RunTimeTest";
     self.view.backgroundColor = [UIColor whiteColor];
     self.view.tintColor = [UIColor blackColor];
@@ -62,6 +66,20 @@
     }
     // 注意释放内存！
     free(ivars);
+}
+
+
+- (void)setUpUi{
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 100, SCREEN_WIDTH-20, SCREEN_HEIGHT-264)];
+    imageView.backgroundColor = [UIColor redColor];
+    imageView.image = [UIImage imageNamed:@"bg_no_colletion_doctor"];
+    /*
+        imageView.contentMode = UIViewContentModeScaleAspectFit;        //正常比例范围内
+        imageView.contentMode = UIViewContentModeScaleAspectFill;       //超出距离
+        imageView.contentMode = UIViewContentModeScaleToFill;              //拉伸，上下左右填充完毕
+     */
+    imageView.contentMode = UIViewContentModeCenter;
+    [self.view addSubview:imageView];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

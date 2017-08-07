@@ -35,6 +35,11 @@
 		000A6ECB1E1F37D90073F493 /* TestFindTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000A6ECA1E1F37D90073F493 /* TestFindTableViewController.m */; };
 		000A6ED51E30987B0073F493 /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 000A6ED31E30987B0073F493 /* UIView+LayoutMethods.m */; };
 		000A6EE31E457BE60073F493 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 000A6EE51E457BE60073F493 /* InfoPlist.strings */; };
+		0031F2801F2ACC39000D8437 /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0031F27F1F2ACC39000D8437 /* BaseWebViewController.m */; };
+		0031F2841F2ACECC000D8437 /* PhotoWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0031F2831F2ACECC000D8437 /* PhotoWebViewController.m */; };
+		0031F2861F2AD2A7000D8437 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0031F2851F2AD2A7000D8437 /* WebKit.framework */; };
+		0031F2891F2AD4FC000D8437 /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0031F2881F2AD4FC000D8437 /* UIViewController+BackButtonHandler.m */; };
+		0031F28C1F2AE041000D8437 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0031F28B1F2AE041000D8437 /* BaseNavigationController.m */; };
 		005E0C141E651471006CB373 /* WMRollingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 005E0C131E651471006CB373 /* WMRollingModel.m */; };
 		005E0C171E6514AD006CB373 /* WMRollingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 005E0C161E6514AD006CB373 /* WMRollingView.m */; };
 		0062DEF41F0B6552003BABA4 /* RegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 0062DEF31F0B6552003BABA4 /* RegularExpression.m */; };
@@ -119,6 +124,15 @@
 		000A6ED31E30987B0073F493 /* UIView+LayoutMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutMethods.m"; sourceTree = "<group>"; };
 		000A6ED41E30987B0073F493 /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
 		000A6EE41E457BE60073F493 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0031F27E1F2ACC39000D8437 /* BaseWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWebViewController.h; sourceTree = "<group>"; };
+		0031F27F1F2ACC39000D8437 /* BaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWebViewController.m; sourceTree = "<group>"; };
+		0031F2821F2ACECC000D8437 /* PhotoWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoWebViewController.h; sourceTree = "<group>"; };
+		0031F2831F2ACECC000D8437 /* PhotoWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoWebViewController.m; sourceTree = "<group>"; };
+		0031F2851F2AD2A7000D8437 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		0031F2871F2AD4FC000D8437 /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
+		0031F2881F2AD4FC000D8437 /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
+		0031F28A1F2AE041000D8437 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		0031F28B1F2AE041000D8437 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		005E0C121E651471006CB373 /* WMRollingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMRollingModel.h; sourceTree = "<group>"; };
 		005E0C131E651471006CB373 /* WMRollingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMRollingModel.m; sourceTree = "<group>"; };
 		005E0C151E6514AD006CB373 /* WMRollingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMRollingView.h; sourceTree = "<group>"; };
@@ -156,6 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0031F2861F2AD2A7000D8437 /* WebKit.framework in Frameworks */,
 				ADE22B6D7507203960B0AD7A /* libPods-SFTestDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +285,7 @@
 		000A6E941E1502CA0073F493 /* 工具类 */ = {
 			isa = PBXGroup;
 			children = (
+				0031F27D1F2ACBF6000D8437 /* Base */,
 				0062DEF11F0B6522003BABA4 /* 正则 */,
 				00CCDE871F020519003EE466 /* model */,
 				00CCDE831F020476003EE466 /* 单例 */,
@@ -344,6 +360,28 @@
 			name = "UIView+LayoutMethods";
 			sourceTree = "<group>";
 		};
+		0031F27D1F2ACBF6000D8437 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0031F2871F2AD4FC000D8437 /* UIViewController+BackButtonHandler.h */,
+				0031F2881F2AD4FC000D8437 /* UIViewController+BackButtonHandler.m */,
+				0031F28A1F2AE041000D8437 /* BaseNavigationController.h */,
+				0031F28B1F2AE041000D8437 /* BaseNavigationController.m */,
+				0031F27E1F2ACC39000D8437 /* BaseWebViewController.h */,
+				0031F27F1F2ACC39000D8437 /* BaseWebViewController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		0031F2811F2ACE8D000D8437 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				0031F2821F2ACECC000D8437 /* PhotoWebViewController.h */,
+				0031F2831F2ACECC000D8437 /* PhotoWebViewController.m */,
+			);
+			name = Web;
+			sourceTree = "<group>";
+		};
 		005E0C0E1E6419FF006CB373 /* UpAndDown */ = {
 			isa = PBXGroup;
 			children = (
@@ -367,6 +405,7 @@
 		0080ADB21E0BAD0F00F3BE00 /* Kind */ = {
 			isa = PBXGroup;
 			children = (
+				0031F2811F2ACE8D000D8437 /* Web */,
 				008F46071EC98C7D00C1CD7C /* RunTimeTest */,
 				0080ADB61E0BAD9B00F3BE00 /* BMShowViewController.h */,
 				0080ADB71E0BAD9B00F3BE00 /* BMShowViewController.m */,
@@ -424,6 +463,7 @@
 		1C180BA04B3BCA77B9A0133F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0031F2851F2AD2A7000D8437 /* WebKit.framework */,
 				9ECAC507DD06D72672CDB968 /* libPods-SFTestDemo.a */,
 			);
 			name = Frameworks;
@@ -650,9 +690,12 @@
 				000A6ED51E30987B0073F493 /* UIView+LayoutMethods.m in Sources */,
 				0062DEF41F0B6552003BABA4 /* RegularExpression.m in Sources */,
 				000358991E0B75C300335D2B /* TwoIsStrong.m in Sources */,
+				0031F2891F2AD4FC000D8437 /* UIViewController+BackButtonHandler.m in Sources */,
 				0003586B1E0B6F7600335D2B /* SFTestDemo.xcdatamodeld in Sources */,
 				008F46061EC98BDE00C1CD7C /* RTimeViewController.m in Sources */,
 				000358961E0B75A000335D2B /* OneIsSmart.m in Sources */,
+				0031F2841F2ACECC000D8437 /* PhotoWebViewController.m in Sources */,
+				0031F28C1F2AE041000D8437 /* BaseNavigationController.m in Sources */,
 				000358621E0B6F7600335D2B /* AppDelegate.m in Sources */,
 				000A6EC71E1F32F30073F493 /* ServiceCollectionViewCell.m in Sources */,
 				0003585F1E0B6F7600335D2B /* main.m in Sources */,
@@ -660,6 +703,7 @@
 				00FF49FA1F15B5B10080287C /* FourIsCute.m in Sources */,
 				000A6EA01E15FC500073F493 /* UIColor+RGB.m in Sources */,
 				0003589C1E0B75F700335D2B /* ThreeIsKind.m in Sources */,
+				0031F2801F2ACC39000D8437 /* BaseWebViewController.m in Sources */,
 				00CCDE8D1F020893003EE466 /* TouchModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

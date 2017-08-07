@@ -11,6 +11,8 @@ pod 'MMDrawerController', '~> 0.5.7'
 pod 'LTNavigationBar'
 pod 'JSONModel', '~> 1.7.0'
 pod 'GrowingIO'
+pod 'WebViewJavascriptBridge', '~> 4.1.5'
+
 
 end
 

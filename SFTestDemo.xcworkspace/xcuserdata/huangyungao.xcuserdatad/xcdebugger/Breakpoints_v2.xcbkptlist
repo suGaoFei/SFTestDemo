@@ -19,29 +19,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SFTestDemo/JSShowEntity+CoreDataClass.m"
-            timestampString = "504091775.947276"
+            filePath = "SFTestDemo/&#x5de5;&#x5177;&#x7c7b;/BaseWebViewController.m"
+            timestampString = "522923440.285328"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "+saveBMShowEntityWithDic:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SFTestDemo/&#x5de5;&#x5177;&#x7c7b;/TestView.m"
-            timestampString = "505390412.251287"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "-initWithFrame:"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "-addCloseItemAction"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -51,13 +35,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SFTestDemo/&#x4e09;&#x5251;&#x5ba2;/ThreeIsKind.m"
-            timestampString = "520840998.229693"
+            filePath = "SFTestDemo/&#x5de5;&#x5177;&#x7c7b;/BaseWebViewController.m"
+            timestampString = "522923440.285328"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "-jumpFMDB"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "-webView:shouldStartLoadWithRequest:navigationType:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SFTestDemo/&#x4e09;&#x5251;&#x5ba2;/Kind/BMShowViewController.m"
+            timestampString = "522921918.946267"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "-setUpUi"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -9,6 +9,7 @@
 #import "ThreeIsKind.h"
 #import "BMShowViewController.h"
 #import "RTimeViewController.h"
+#import "PhotoWebViewController.h"
 
 @interface ThreeIsKind ()
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;
@@ -24,6 +25,8 @@
     self.tableView.separatorInset = UIEdgeInsetsZero;
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.navigationItem.title = @"";
+    
+    self.tableView.showsVerticalScrollIndicator = NO;
     
     //毛玻璃效果
 //    UIVisualEffectView *visualEffect = [[UIVisualEffectView alloc]initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight]];
@@ -142,6 +145,14 @@
     
     if (indexPath.section == 1 && indexPath.row == 1) {
         RTimeViewController *nextVC = [[RTimeViewController alloc]init];
+        nextVC.hidesBottomBarWhenPushed = YES;
+        
+        [self.navigationController showViewController:nextVC sender:nil];
+    }
+    
+    if (indexPath.section == 1 && indexPath.row == 2) {
+        PhotoWebViewController *nextVC = [[PhotoWebViewController alloc]init];
+        nextVC.UrlString = @"https://www.baidu.com/";
         nextVC.hidesBottomBarWhenPushed = YES;
         
         [self.navigationController showViewController:nextVC sender:nil];
