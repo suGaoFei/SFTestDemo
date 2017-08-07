@@ -21,6 +21,7 @@
     [super viewDidLoad];
     
     [self setUpUi];
+    //假装这个是修改，然后提交一下。
 }
 
 - (void)setUpUi{
