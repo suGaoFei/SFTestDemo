@@ -20,12 +20,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-#warning 下回分解
-    UIBarButtonItem *backBarItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"title_new_back"]
-                                                                    style:UIBarButtonItemStylePlain
-                                                                   target:self
-                                                                   action:@selector(backButtonAction:)];
-//    self.
+//#warning 下回分解
+//    UIBarButtonItem *backBarItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"title_new_back"]
+//                                                                    style:UIBarButtonItemStylePlain
+//                                                                   target:self
+//                                                                   action:@selector(backButtonAction:)];
+    
+    
    
 //    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     

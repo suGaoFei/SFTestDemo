@@ -40,6 +40,7 @@
 		0031F2861F2AD2A7000D8437 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0031F2851F2AD2A7000D8437 /* WebKit.framework */; };
 		0031F2891F2AD4FC000D8437 /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0031F2881F2AD4FC000D8437 /* UIViewController+BackButtonHandler.m */; };
 		0031F28C1F2AE041000D8437 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0031F28B1F2AE041000D8437 /* BaseNavigationController.m */; };
+		004037E71F70F2EA0033DD32 /* WMViedoAlterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 004037E61F70F2EA0033DD32 /* WMViedoAlterView.m */; };
 		005E0C141E651471006CB373 /* WMRollingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 005E0C131E651471006CB373 /* WMRollingModel.m */; };
 		005E0C171E6514AD006CB373 /* WMRollingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 005E0C161E6514AD006CB373 /* WMRollingView.m */; };
 		0062DEF41F0B6552003BABA4 /* RegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 0062DEF31F0B6552003BABA4 /* RegularExpression.m */; };
@@ -133,6 +134,8 @@
 		0031F2881F2AD4FC000D8437 /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
 		0031F28A1F2AE041000D8437 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		0031F28B1F2AE041000D8437 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		004037E51F70F2EA0033DD32 /* WMViedoAlterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMViedoAlterView.h; sourceTree = "<group>"; };
+		004037E61F70F2EA0033DD32 /* WMViedoAlterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMViedoAlterView.m; sourceTree = "<group>"; };
 		005E0C121E651471006CB373 /* WMRollingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMRollingModel.h; sourceTree = "<group>"; };
 		005E0C131E651471006CB373 /* WMRollingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMRollingModel.m; sourceTree = "<group>"; };
 		005E0C151E6514AD006CB373 /* WMRollingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMRollingView.h; sourceTree = "<group>"; };
@@ -285,6 +288,7 @@
 		000A6E941E1502CA0073F493 /* 工具类 */ = {
 			isa = PBXGroup;
 			children = (
+				004037E11F70F1A80033DD32 /* AlterView */,
 				0031F27D1F2ACBF6000D8437 /* Base */,
 				0062DEF11F0B6522003BABA4 /* 正则 */,
 				00CCDE871F020519003EE466 /* model */,
@@ -380,6 +384,15 @@
 				0031F2831F2ACECC000D8437 /* PhotoWebViewController.m */,
 			);
 			name = Web;
+			sourceTree = "<group>";
+		};
+		004037E11F70F1A80033DD32 /* AlterView */ = {
+			isa = PBXGroup;
+			children = (
+				004037E51F70F2EA0033DD32 /* WMViedoAlterView.h */,
+				004037E61F70F2EA0033DD32 /* WMViedoAlterView.m */,
+			);
+			name = AlterView;
 			sourceTree = "<group>";
 		};
 		005E0C0E1E6419FF006CB373 /* UpAndDown */ = {
@@ -543,7 +556,7 @@
 		000358521E0B6F7600335D2B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = SugarFree;
 				TargetAttributes = {
 					000358591E0B6F7600335D2B = {
@@ -693,6 +706,7 @@
 				0031F2891F2AD4FC000D8437 /* UIViewController+BackButtonHandler.m in Sources */,
 				0003586B1E0B6F7600335D2B /* SFTestDemo.xcdatamodeld in Sources */,
 				008F46061EC98BDE00C1CD7C /* RTimeViewController.m in Sources */,
+				004037E71F70F2EA0033DD32 /* WMViedoAlterView.m in Sources */,
 				000358961E0B75A000335D2B /* OneIsSmart.m in Sources */,
 				0031F2841F2ACECC000D8437 /* PhotoWebViewController.m in Sources */,
 				0031F28C1F2AE041000D8437 /* BaseNavigationController.m in Sources */,
@@ -798,6 +812,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -847,6 +862,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -878,10 +894,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 3YA54AB2B7;
+				ENABLE_BITCODE = NO;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = SFTestDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = SFTestDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -899,10 +917,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 3YA54AB2B7;
+				ENABLE_BITCODE = NO;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = SFTestDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = SFTestDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",

@@ -11,6 +11,8 @@
 #import "RTimeViewController.h"
 #import "PhotoWebViewController.h"
 
+#import "WMViedoAlterView.h"
+
 @interface ThreeIsKind ()
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;
 
@@ -103,7 +105,7 @@
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self.tableView deselectRowAtIndexPath:indexPath animated:nil];
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     if (indexPath.section == 0 && indexPath.row == 0) {
         
@@ -117,6 +119,18 @@
         //转换成中文
         NSString *dataGBK = [dataUTF8 stringByRemovingPercentEncoding];
         NSLog(@"%@",dataGBK);
+    }
+    
+    if (indexPath.section == 0 && indexPath.row == 1) {
+        WMViedoAlterView *alterView = [[WMViedoAlterView alloc]initWithTitle:@"你确定要退出吗" message:nil sureBtn:@"确定" cancleBtn:@"取消"];
+        alterView.resultIndex = ^(NSInteger index){
+            if (index == 0) {
+                NSLog(@"哈哈哈");
+            }else if (index == 1) {
+                NSLog(@"嘿嘿嘿");
+            }
+        };
+        [alterView showXLAlertView];
     }
     
     
