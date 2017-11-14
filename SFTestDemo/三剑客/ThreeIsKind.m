@@ -10,7 +10,7 @@
 #import "BMShowViewController.h"
 #import "RTimeViewController.h"
 #import "PhotoWebViewController.h"
-
+#import <AVFoundation/AVFoundation.h>
 #import "WMViedoAlterView.h"
 
 @interface ThreeIsKind ()
@@ -52,7 +52,18 @@
         [self.navigationController showViewController:nextVc sender:nil];
     }
     
+    self.tableView.estimatedRowHeight = 0;
+    self.tableView.estimatedSectionHeaderHeight = 0;
+    self.tableView.estimatedSectionFooterHeight = 0;
     
+    if (@available(iOS 11.0, *)) {
+        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
+        self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
+    } else {
+        // Fallback on earlier versions
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
 }
 - (void)jumpFMDB{
     BMShowViewController *nextVc = [[BMShowViewController alloc]init];
@@ -170,6 +181,11 @@
         nextVC.hidesBottomBarWhenPushed = YES;
         
         [self.navigationController showViewController:nextVC sender:nil];
+    }
+    
+    if (indexPath.section == 2 && indexPath.row == 0) {
+        NSLog(@"播放语音");
+//        AVSpeechSynthesizer
     }
 }
 
