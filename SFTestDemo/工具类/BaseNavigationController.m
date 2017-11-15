@@ -36,10 +36,15 @@
      */
     
     
-    UIImage *backButtonImage = [[UIImage imageNamed:@"title_new_back"] resizableImageWithCapInsets:UIEdgeInsetsMake(0,30, 0, 0)];
-    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60) forBarMetrics:UIBarMetricsDefault];
+//    UIImage *backButtonImage = [[UIImage imageNamed:@"title_new_back"] resizableImageWithCapInsets:UIEdgeInsetsMake(0,30, 0, 0)];
+//    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+//    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -160) forBarMetrics:UIBarMetricsDefault];
     
+    UIImage *backButtonImage = [[[UIImage imageNamed:@"title_new_back"] resizableImageWithCapInsets:UIEdgeInsetsMake(0,30, 0, 0)] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    self.navigationBar.backIndicatorImage = backButtonImage;
+    self.navigationBar.backIndicatorTransitionMaskImage = backButtonImage;
+    
+    [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor colorFromHexRGB:@"1a1a1a"],NSFontAttributeName:[UIFont systemFontOfSize:18]}];
     
 }
 
