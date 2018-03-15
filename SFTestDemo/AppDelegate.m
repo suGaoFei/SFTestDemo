@@ -96,7 +96,15 @@
   
     }
 }
-
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary *)options {
+    if ([url.host isEqualToString:@"www.baidu.com"]) {
+        NSLog(@"%@", url.path);
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"SchemesCallBack" object:self userInfo:@{@"url": @"https://www.baidu.com/"}];
+        return YES;
+    }
+    
+    return YES;
+}
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
     if ([Growing handleUrl:url]) // 请务必确保该函数被调用

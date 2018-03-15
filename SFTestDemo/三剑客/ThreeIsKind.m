@@ -7,6 +7,7 @@
 //
 
 #import "ThreeIsKind.h"
+#import "BasicCellViewController.h"
 #import "BMShowViewController.h"
 #import "RTimeViewController.h"
 #import "PhotoWebViewController.h"
@@ -52,9 +53,10 @@
         [self.navigationController showViewController:nextVc sender:nil];
     }
     
-    self.tableView.estimatedRowHeight = 0;
-    self.tableView.estimatedSectionHeaderHeight = 0;
-    self.tableView.estimatedSectionFooterHeight = 0;
+//    self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, 0.001)];
+//    self.tableView.estimatedRowHeight = 0;
+//    self.tableView.estimatedSectionHeaderHeight = 0;
+//    self.tableView.estimatedSectionFooterHeight = 0;
     
     if (@available(iOS 11.0, *)) {
         self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
@@ -64,6 +66,8 @@
         // Fallback on earlier versions
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
+    
+    
 }
 - (void)jumpFMDB{
     BMShowViewController *nextVc = [[BMShowViewController alloc]init];
@@ -104,14 +108,22 @@
 }
 
 #pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 3;
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 0;
+}
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForFooterInSection:(NSInteger)section{
+    return 0;
+}
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section{
+    return 0;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 10.f;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 0.01f;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
-}
 
 #pragma mark - Table view delegate
 
@@ -130,6 +142,9 @@
         //转换成中文
         NSString *dataGBK = [dataUTF8 stringByRemovingPercentEncoding];
         NSLog(@"%@",dataGBK);
+        
+        BasicCellViewController *nextVC = [[BasicCellViewController alloc]init];
+        [self.navigationController showViewController:nextVC sender:nil];
     }
     
     if (indexPath.section == 0 && indexPath.row == 1) {

@@ -29,9 +29,16 @@
     _mainWebView.delegate = self;
     NSMutableURLRequest *mutableRequest = [[NSMutableURLRequest alloc]initWithURL:[NSURL URLWithString:self.UrlString]];
     [_mainWebView loadRequest:mutableRequest];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(jumpNextUrl:) name:@"SchemesCallBack" object:nil];
 }
-
-
+- (void)jumpNextUrl: (NSNotification *)note{
+    NSDictionary *dic = [note userInfo];
+    NSURL *url = [NSURL URLWithString:dic[@"url"]];
+    [_mainWebView loadRequest:[NSURLRequest requestWithURL:url]];
+}
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 #pragma mark WebView Deleagte
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
     self.title = [_mainWebView stringByEvaluatingJavaScriptFromString:@"document.title"];

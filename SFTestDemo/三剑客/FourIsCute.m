@@ -7,7 +7,7 @@
 //
 
 #import "FourIsCute.h"
-
+#import "ButtonTestViewController.h"
 @interface FourIsCute ()
 
 @property (nonatomic, copy) UIScrollView *contentScrollView;    /*内容滚动*/
@@ -19,8 +19,51 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"before perform");
+        [self performSelector:@selector(printLog) withObject:nil afterDelay:0];
+        NSLog(@"after perform");
+    });
     
     [self setUpUi];
+    [self testUrl];
+    [self testBtn];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"right" style:UIBarButtonItemStylePlain target:self action:@selector(jumpRight)];
+}
+- (void)jumpRight{
+    ButtonTestViewController *nextVC = [[ButtonTestViewController alloc]init];
+    nextVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController showViewController:nextVC sender:nil];
+}
+- (void)testBtn {
+    UIButton *btn = [[UIButton alloc] init];
+    [self.view addSubview:btn];
+    [btn removeFromSuperview];
+    NSLog(@"%@", (btn == nil) ? @"YES" : @"NO");
+    
+    [self.view addSubview:btn];
+    __weak typeof (UIButton *) weakSelf = btn;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [weakSelf removeFromSuperview];
+        NSLog(@"%@", (weakSelf == nil) ? @"YES" : @"NO");
+    });
+    
+}
+- (void)printLog {
+    NSLog(@"printLog");
+}
+- (void)testUrl {
+    NSString *path = @"https://www.baidu.com/";
+    NSString *path2 = @"http://fanyi.baidu.com/translate?query=#auto/zh/";
+    NSString *path3 = @"http://fanyi.baidu.com/translate?query=#zh/en/测试";
+    NSURL *url = [NSURL URLWithString:path];
+    NSURL *url2 = [NSURL URLWithString:path2];
+    NSURL *url3 = [NSURL URLWithString:path3];
+    NSLog(@"%@", url);
+    NSLog(@"%@", url2);
+    NSLog(@"%@", url3);
 }
 
 - (void)setUpUi{

@@ -2,11 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
+	<key>Applicatio</key>
+	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -56,11 +53,28 @@
 				<string>growing.cfb93b2b81a829cb</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>SugarFree</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>chanyiapp</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -80,7 +94,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
-	<key>Applicatio</key>
-	<string></string>
 </dict>
 </plist>

@@ -35,11 +35,15 @@
 		000A6ECB1E1F37D90073F493 /* TestFindTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000A6ECA1E1F37D90073F493 /* TestFindTableViewController.m */; };
 		000A6ED51E30987B0073F493 /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 000A6ED31E30987B0073F493 /* UIView+LayoutMethods.m */; };
 		000A6EE31E457BE60073F493 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 000A6EE51E457BE60073F493 /* InfoPlist.strings */; };
+		002ADC39204CD648004D056D /* BasicCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002ADC38204CD648004D056D /* BasicCellViewController.m */; };
+		002B5FE6204FE1690012463E /* GFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 002B5FE5204FE1690012463E /* GFButton.m */; };
+		002B5FEA204FE3E20012463E /* ButtonTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002B5FE9204FE3E20012463E /* ButtonTestViewController.m */; };
 		0031F2801F2ACC39000D8437 /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0031F27F1F2ACC39000D8437 /* BaseWebViewController.m */; };
 		0031F2841F2ACECC000D8437 /* PhotoWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0031F2831F2ACECC000D8437 /* PhotoWebViewController.m */; };
 		0031F2861F2AD2A7000D8437 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0031F2851F2AD2A7000D8437 /* WebKit.framework */; };
 		0031F2891F2AD4FC000D8437 /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0031F2881F2AD4FC000D8437 /* UIViewController+BackButtonHandler.m */; };
 		0031F28C1F2AE041000D8437 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0031F28B1F2AE041000D8437 /* BaseNavigationController.m */; };
+		003EEEC8205A65AA000A9DFA /* GFImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EEEC7205A65AA000A9DFA /* GFImageView.m */; };
 		004037E71F70F2EA0033DD32 /* WMViedoAlterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 004037E61F70F2EA0033DD32 /* WMViedoAlterView.m */; };
 		005E0C141E651471006CB373 /* WMRollingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 005E0C131E651471006CB373 /* WMRollingModel.m */; };
 		005E0C171E6514AD006CB373 /* WMRollingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 005E0C161E6514AD006CB373 /* WMRollingView.m */; };
@@ -125,6 +129,12 @@
 		000A6ED31E30987B0073F493 /* UIView+LayoutMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutMethods.m"; sourceTree = "<group>"; };
 		000A6ED41E30987B0073F493 /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
 		000A6EE41E457BE60073F493 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		002ADC37204CD648004D056D /* BasicCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicCellViewController.h; sourceTree = "<group>"; };
+		002ADC38204CD648004D056D /* BasicCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicCellViewController.m; sourceTree = "<group>"; };
+		002B5FE4204FE1690012463E /* GFButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFButton.h; sourceTree = "<group>"; };
+		002B5FE5204FE1690012463E /* GFButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFButton.m; sourceTree = "<group>"; };
+		002B5FE8204FE3E20012463E /* ButtonTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonTestViewController.h; sourceTree = "<group>"; };
+		002B5FE9204FE3E20012463E /* ButtonTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonTestViewController.m; sourceTree = "<group>"; };
 		0031F27E1F2ACC39000D8437 /* BaseWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWebViewController.h; sourceTree = "<group>"; };
 		0031F27F1F2ACC39000D8437 /* BaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWebViewController.m; sourceTree = "<group>"; };
 		0031F2821F2ACECC000D8437 /* PhotoWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoWebViewController.h; sourceTree = "<group>"; };
@@ -134,6 +144,8 @@
 		0031F2881F2AD4FC000D8437 /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
 		0031F28A1F2AE041000D8437 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		0031F28B1F2AE041000D8437 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		003EEEC6205A65AA000A9DFA /* GFImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFImageView.h; sourceTree = "<group>"; };
+		003EEEC7205A65AA000A9DFA /* GFImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFImageView.m; sourceTree = "<group>"; };
 		004037E51F70F2EA0033DD32 /* WMViedoAlterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMViedoAlterView.h; sourceTree = "<group>"; };
 		004037E61F70F2EA0033DD32 /* WMViedoAlterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMViedoAlterView.m; sourceTree = "<group>"; };
 		005E0C121E651471006CB373 /* WMRollingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMRollingModel.h; sourceTree = "<group>"; };
@@ -232,6 +244,7 @@
 				00ABCE591EC3FEC10019A36F /* Smart */,
 				000A6EA61E164A630073F493 /* Strong */,
 				0080ADB21E0BAD0F00F3BE00 /* Kind */,
+				002B5FE7204FE3780012463E /* Cute */,
 				000358931E0B753C00335D2B /* 三剑客 */,
 				0003586E1E0B6F7600335D2B /* LaunchScreen.storyboard */,
 				000358711E0B6F7600335D2B /* Info.plist */,
@@ -288,6 +301,8 @@
 		000A6E941E1502CA0073F493 /* 工具类 */ = {
 			isa = PBXGroup;
 			children = (
+				003EEEC5205A6580000A9DFA /* GFImageView */,
+				002B5FE3204FE1480012463E /* Button */,
 				004037E11F70F1A80033DD32 /* AlterView */,
 				0031F27D1F2ACBF6000D8437 /* Base */,
 				0062DEF11F0B6522003BABA4 /* 正则 */,
@@ -364,6 +379,34 @@
 			name = "UIView+LayoutMethods";
 			sourceTree = "<group>";
 		};
+		002ADC36204CD5DC004D056D /* BasicCell */ = {
+			isa = PBXGroup;
+			children = (
+				002ADC37204CD648004D056D /* BasicCellViewController.h */,
+				002ADC38204CD648004D056D /* BasicCellViewController.m */,
+			);
+			name = BasicCell;
+			sourceTree = "<group>";
+		};
+		002B5FE3204FE1480012463E /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				002B5FE4204FE1690012463E /* GFButton.h */,
+				002B5FE5204FE1690012463E /* GFButton.m */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		002B5FE7204FE3780012463E /* Cute */ = {
+			isa = PBXGroup;
+			children = (
+				002B5FE8204FE3E20012463E /* ButtonTestViewController.h */,
+				002B5FE9204FE3E20012463E /* ButtonTestViewController.m */,
+			);
+			name = Cute;
+			path = "三剑客/Kind";
+			sourceTree = "<group>";
+		};
 		0031F27D1F2ACBF6000D8437 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,6 +427,15 @@
 				0031F2831F2ACECC000D8437 /* PhotoWebViewController.m */,
 			);
 			name = Web;
+			sourceTree = "<group>";
+		};
+		003EEEC5205A6580000A9DFA /* GFImageView */ = {
+			isa = PBXGroup;
+			children = (
+				003EEEC6205A65AA000A9DFA /* GFImageView.h */,
+				003EEEC7205A65AA000A9DFA /* GFImageView.m */,
+			);
+			name = GFImageView;
 			sourceTree = "<group>";
 		};
 		004037E11F70F1A80033DD32 /* AlterView */ = {
@@ -418,6 +470,7 @@
 		0080ADB21E0BAD0F00F3BE00 /* Kind */ = {
 			isa = PBXGroup;
 			children = (
+				002ADC36204CD5DC004D056D /* BasicCell */,
 				0031F2811F2ACE8D000D8437 /* Web */,
 				008F46071EC98C7D00C1CD7C /* RunTimeTest */,
 				0080ADB61E0BAD9B00F3BE00 /* BMShowViewController.h */,
@@ -692,6 +745,7 @@
 				000A6EA41E1636EB0073F493 /* TitleTableViewCell.m in Sources */,
 				00CCDE861F0204AA003EE466 /* ShareData.m in Sources */,
 				0080ADB81E0BAD9B00F3BE00 /* BMShowViewController.m in Sources */,
+				002B5FEA204FE3E20012463E /* ButtonTestViewController.m in Sources */,
 				000A6EC31E1CDA910073F493 /* TestTableViewController.m in Sources */,
 				000358651E0B6F7600335D2B /* ViewController.m in Sources */,
 				000A6EA91E164A9D0073F493 /* FindViewController.m in Sources */,
@@ -706,6 +760,7 @@
 				0031F2891F2AD4FC000D8437 /* UIViewController+BackButtonHandler.m in Sources */,
 				0003586B1E0B6F7600335D2B /* SFTestDemo.xcdatamodeld in Sources */,
 				008F46061EC98BDE00C1CD7C /* RTimeViewController.m in Sources */,
+				002ADC39204CD648004D056D /* BasicCellViewController.m in Sources */,
 				004037E71F70F2EA0033DD32 /* WMViedoAlterView.m in Sources */,
 				000358961E0B75A000335D2B /* OneIsSmart.m in Sources */,
 				0031F2841F2ACECC000D8437 /* PhotoWebViewController.m in Sources */,
@@ -714,9 +769,11 @@
 				000A6EC71E1F32F30073F493 /* ServiceCollectionViewCell.m in Sources */,
 				0003585F1E0B6F7600335D2B /* main.m in Sources */,
 				005E0C141E651471006CB373 /* WMRollingModel.m in Sources */,
+				002B5FE6204FE1690012463E /* GFButton.m in Sources */,
 				00FF49FA1F15B5B10080287C /* FourIsCute.m in Sources */,
 				000A6EA01E15FC500073F493 /* UIColor+RGB.m in Sources */,
 				0003589C1E0B75F700335D2B /* ThreeIsKind.m in Sources */,
+				003EEEC8205A65AA000A9DFA /* GFImageView.m in Sources */,
 				0031F2801F2ACC39000D8437 /* BaseWebViewController.m in Sources */,
 				00CCDE8D1F020893003EE466 /* TouchModel.m in Sources */,
 			);
