@@ -13,6 +13,7 @@
 #import "PhotoWebViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import "WMViedoAlterView.h"
+#import "WKTestWebViewController.h"
 
 @interface ThreeIsKind ()
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;
@@ -194,13 +195,14 @@
         PhotoWebViewController *nextVC = [[PhotoWebViewController alloc]init];
         nextVC.UrlString = @"https://www.baidu.com/";
         nextVC.hidesBottomBarWhenPushed = YES;
-        
         [self.navigationController showViewController:nextVC sender:nil];
     }
     
     if (indexPath.section == 2 && indexPath.row == 0) {
-        NSLog(@"播放语音");
-//        AVSpeechSynthesizer
+        WKTestWebViewController *testForWKWebView = [[WKTestWebViewController alloc]init];
+        testForWKWebView.urlString = @"https://www.baidu.com/";
+        testForWKWebView.hidesBottomBarWhenPushed = YES;
+        [self.navigationController showViewController:testForWKWebView sender:nil];
     }
 }
 

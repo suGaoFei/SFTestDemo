@@ -56,6 +56,9 @@
 		00ABCE5C1EC3FF0F0019A36F /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ABCE5B1EC3FF0E0019A36F /* LeftViewController.m */; };
 		00CCDE861F0204AA003EE466 /* ShareData.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CCDE851F0204AA003EE466 /* ShareData.m */; };
 		00CCDE8D1F020893003EE466 /* TouchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CCDE8C1F020893003EE466 /* TouchModel.m */; };
+		00E0F52A205F8EFC007C697F /* WKTestWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E0F529205F8EFC007C697F /* WKTestWebViewController.m */; };
+		00E0F52D205FA3F3007C697F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E0F52C205FA3F3007C697F /* BaseViewController.m */; };
+		00E0F533205FB2AE007C697F /* BaseWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E0F532205FB2AE007C697F /* BaseWKWebViewController.m */; };
 		00FF49FA1F15B5B10080287C /* FourIsCute.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FF49F91F15B5B10080287C /* FourIsCute.m */; };
 		ADE22B6D7507203960B0AD7A /* libPods-SFTestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECAC507DD06D72672CDB968 /* libPods-SFTestDemo.a */; };
 /* End PBXBuildFile section */
@@ -173,6 +176,12 @@
 		00CCDE851F0204AA003EE466 /* ShareData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareData.m; sourceTree = "<group>"; };
 		00CCDE8B1F020893003EE466 /* TouchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchModel.h; sourceTree = "<group>"; };
 		00CCDE8C1F020893003EE466 /* TouchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchModel.m; sourceTree = "<group>"; };
+		00E0F528205F8EFC007C697F /* WKTestWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKTestWebViewController.h; sourceTree = "<group>"; };
+		00E0F529205F8EFC007C697F /* WKTestWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKTestWebViewController.m; sourceTree = "<group>"; };
+		00E0F52B205FA3F3007C697F /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		00E0F52C205FA3F3007C697F /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		00E0F531205FB2AE007C697F /* BaseWKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseWKWebViewController.h; sourceTree = "<group>"; };
+		00E0F532205FB2AE007C697F /* BaseWKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseWKWebViewController.m; sourceTree = "<group>"; };
 		00FF49F81F15B5B10080287C /* FourIsCute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourIsCute.h; sourceTree = "<group>"; };
 		00FF49F91F15B5B10080287C /* FourIsCute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourIsCute.m; sourceTree = "<group>"; };
 		12A24A443CE433D31D4EBA71 /* Pods-SFTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFTestDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SFTestDemo/Pods-SFTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -301,6 +310,7 @@
 		000A6E941E1502CA0073F493 /* 工具类 */ = {
 			isa = PBXGroup;
 			children = (
+				00E0F51E205F8B68007C697F /* WKWebView */,
 				003EEEC5205A6580000A9DFA /* GFImageView */,
 				002B5FE3204FE1480012463E /* Button */,
 				004037E11F70F1A80033DD32 /* AlterView */,
@@ -526,6 +536,19 @@
 			name = model;
 			sourceTree = "<group>";
 		};
+		00E0F51E205F8B68007C697F /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				00E0F52B205FA3F3007C697F /* BaseViewController.h */,
+				00E0F52C205FA3F3007C697F /* BaseViewController.m */,
+				00E0F531205FB2AE007C697F /* BaseWKWebViewController.h */,
+				00E0F532205FB2AE007C697F /* BaseWKWebViewController.m */,
+				00E0F528205F8EFC007C697F /* WKTestWebViewController.h */,
+				00E0F529205F8EFC007C697F /* WKTestWebViewController.m */,
+			);
+			name = WKWebView;
+			sourceTree = "<group>";
+		};
 		1C180BA04B3BCA77B9A0133F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -741,6 +764,7 @@
 				005E0C171E6514AD006CB373 /* WMRollingView.m in Sources */,
 				000A6ECB1E1F37D90073F493 /* TestFindTableViewController.m in Sources */,
 				000A6EC01E1CD1FE0073F493 /* TestView.m in Sources */,
+				00E0F533205FB2AE007C697F /* BaseWKWebViewController.m in Sources */,
 				000A6EAC1E164FB80073F493 /* FindTableViewController.m in Sources */,
 				000A6EA41E1636EB0073F493 /* TitleTableViewCell.m in Sources */,
 				00CCDE861F0204AA003EE466 /* ShareData.m in Sources */,
@@ -751,6 +775,7 @@
 				000A6EA91E164A9D0073F493 /* FindViewController.m in Sources */,
 				000A6EBB1E1CC9B20073F493 /* HospitalTableViewCell.m in Sources */,
 				000A6EB21E1C94700073F493 /* HealthTableViewController.m in Sources */,
+				00E0F52D205FA3F3007C697F /* BaseViewController.m in Sources */,
 				00ABCE5C1EC3FF0F0019A36F /* LeftViewController.m in Sources */,
 				008F460F1EC98D5F00C1CD7C /* Person.m in Sources */,
 				000A6EB61E1C96D90073F493 /* HealthCollectionViewCell.m in Sources */,
@@ -772,6 +797,7 @@
 				002B5FE6204FE1690012463E /* GFButton.m in Sources */,
 				00FF49FA1F15B5B10080287C /* FourIsCute.m in Sources */,
 				000A6EA01E15FC500073F493 /* UIColor+RGB.m in Sources */,
+				00E0F52A205F8EFC007C697F /* WKTestWebViewController.m in Sources */,
 				0003589C1E0B75F700335D2B /* ThreeIsKind.m in Sources */,
 				003EEEC8205A65AA000A9DFA /* GFImageView.m in Sources */,
 				0031F2801F2ACC39000D8437 /* BaseWebViewController.m in Sources */,
